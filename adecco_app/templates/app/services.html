@@ -1,0 +1,137 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block contenido %}
+
+			<!-- Begin bread crumbs -->
+			<nav class="bread-crumbs">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<ul class="bread-crumbs-list">
+								<li>
+									<a href="{% url 'Inicio' %}">Inicio</a>
+									<i class="material-icons md-18">chevron_right</i>
+								</li>
+								<li><a href="#!">Servicios</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav><!-- End bread crumbs -->
+
+			<div class="section">
+				<div class="container">
+					<div class="row items">
+						<div class="col-12">
+							<div class="section-heading heading-center">
+								<div class="section-subheading">ÁREAS A LAS QUE SERVIMOS</div>
+								<h1>Nuestros Servicios</h1>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12 item">
+							<!-- Begin icon item -->
+							<a href="{% url 'Adecco1' %}" class="iitem item-style">
+								<div class="iitem-icon">
+									<i class="material-icons material-icons-outlined md-48">corporate_fare</i>
+								</div>
+								<div class="iitem-icon-bg">
+									<i class="material-icons material-icons-outlined">corporate_fare</i>
+								</div>
+								<h2 class="iitem-heading item-heading-large">Adecco Industrial & Logistics</h2>
+								<div class="iitem-desc">Externalización de soluciones y procesos de negocio para optimizar la productividad de las empresas.
+									Con nuestros servicios especializados de logística y almacén gestionamos la planeación, administración.</div>
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12 item">
+							<!-- Begin icon item -->
+							<a href="{% url 'Adecco2' %}" class="iitem item-style">
+								<div class="iitem-icon">
+									<i class="material-icons material-icons-outlined md-48">support_agent</i>
+								</div>
+								<div class="iitem-icon-bg">
+									<i class="material-icons material-icons-outlined">support_agent</i>
+								</div>
+								<h2 class="iitem-heading item-heading-large">Adecco Office</h2>
+								<div class="iitem-desc">Gestionamos y externalizamos las diferentes áreas de soporte administrativo o staff dentro de tu organización, 
+									mediante la integración de personas, procesos y tecnologías. Optimizando el enfoque 100% al Core Business de la empresa.</div>
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-12 col-12 item">
+							<!-- Begin icon item -->
+							<a href="{% url 'Adecco3' %}" class="iitem item-style">
+								<div class="iitem-icon">
+									<i class="material-icons material-icons-outlined md-48">cloud_download</i>
+								</div>
+								<div class="iitem-icon-bg">
+									<i class="material-icons material-icons-outlined">cloud_download</i>
+								</div>
+								<h2 class="iitem-heading item-heading-large">Adecco Sales & Marketing</h2>
+								<div class="iitem-desc">Generamos una alta recordación del producto en el publico objetivo,
+									despertando un sentimiento de atracción por la campaña,Nos convertimos en tu mejor opción estratégica asumiendo la operación del punto de venta.</div>
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12 item">
+							<!-- Begin icon item -->
+							<a href="{% url 'Adecco4' %}" class="iitem item-style">
+								<div class="iitem-icon">
+									<i class="material-icons material-icons-outlined md-48">laptop_mac</i>
+								</div>
+								<div class="iitem-icon-bg">
+									<i class="material-icons material-icons-outlined">laptop_mac</i>
+								</div>
+								<h2 class="iitem-heading item-heading-large">Adecco Expert</h2>
+								<div class="iitem-desc">La evolución hacía un modelo de Servicios Especializados, con el respaldo internacional de Grupo Adecco que hoy se opera de manera exitosa en más de 60 países en el mundo, exige de 
+									soluciones sólidas, que den certeza jurídica, financiera operativa y de innovación a las empresas.</div>
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12 item">
+							<!-- Begin icon item -->
+							<a href="{% url 'Adecco5' %}" class="iitem item-style">
+								<div class="iitem-icon">
+									<i class="material-icons material-icons-outlined md-48">phone_android</i>
+								</div>
+								<div class="iitem-icon-bg">
+									<i class="material-icons material-icons-outlined">phone_android</i>
+								</div>
+								<h2 class="iitem-heading item-heading-large">Adecco IT</h2>
+								<div class="iitem-desc">Modelo de servicio que, como parte del ecosistema de Specialized Services, tiene la misión de asistirte para 
+									conseguir resultados tangibles en tu negocio en este mundo en constante transformación digital.</div>
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-12 col-12 item">
+							<!-- Begin icon item -->
+							<a href="{% url 'Adecco6' %}" class="iitem item-style">
+								<div class="iitem-icon">
+									<i class="material-icons material-icons-outlined md-48">tv</i>
+								</div>
+								<div class="iitem-icon-bg">
+									<i class="material-icons material-icons-outlined">tv</i>
+								</div>
+								<h2 class="iitem-heading item-heading-large">Adecco Healthcare</h2>
+								<div class="iitem-desc">Con el servicio especializado de Healthcare proteges y mantienes el bienestar físico,
+									 mental y social de tus trabajadores en los niveles más altos; sin importar su actividad.</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<a class="bff d-none d-md-block" href="{% url 'Contactanos' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="bff-container">
+                    <p>!!Te estamos esperando!!</p>
+                    <div class="btn btn-border btn-small">
+                        <span>Contactanos!!</span>
+                        <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+{% endblock %}

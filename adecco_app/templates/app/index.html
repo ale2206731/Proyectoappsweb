@@ -1,0 +1,441 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block contenido %}
+		<!-- Begin intro -->
+<div class="section-bgc intro">
+    <div class="intro-slider">
+        <div class="intro-item" style="background-image: url({% static 'assets/img/don.jpg' %})">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="intro-content">
+                            <div class="section-heading shm-none">
+                                <div class="section-subheading"></div>
+                                <h1>ADECCO<br> </h1>
+                                <p class="section-desc">The Adecco Group es una compañía de recursos humanos con base en Zúrich, ​ Suiza.​ El Grupo Adecco da trabajo a aproximadamente 700.000 trabajadores con contratos temporales y cuenta con más de 34.000 empleados propios y 5.200 oficinas en más de 60 países y territorios alrededor del mundo</p>
+                            </div>
+                            <div class="wrap-btn intro-btns">
+                                <a href="{% url 'Sobre Nosotros' %}" class="btn btn-with-icon btn-small ripple">
+                                    <span>Conocenos!!</span>
+                                    <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="{% static 'assets/img/sprite.svg#arrow-right' %}"></use></svg>
+                                </a>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- End intro -->
+
+			<!-- Begin services -->
+<section class="section services">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading heading-center">
+                    <div class="section-subheading"></div>
+                    <h2>Servicios a Empresas</h2>
+                </div> 
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <a href="{% url 'Adecco1' %}" class="iitem item-style">
+                    <div class="iitem-icon">
+                        <i class="material-icons material-icons-outlined md-48">corporate_fare</i>
+                    </div>
+                    <div class="iitem-icon-bg">
+                        <i class="material-icons material-icons-outlined">corporate_fare</i>
+                    </div>
+                    <h3 class="iitem-heading item-heading-large">Adecco Industrial & Logistics</h3>
+                    <div class="iitem-desc">Externalización de soluciones y procesos de negocio para optimizar la productividad de las empresas.
+                        Con nuestros servicios especializados de logística y almacén gestionamos la planeación, administración, supervisión y ejecución de procesos dentro de la cadena de suministro y de logística inversa, para una mayor eficacia y eficiencia.</div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <a href="{% url 'Adecco2' %}" class="iitem item-style">
+                    <div class="iitem-icon">
+                        <i class="material-icons material-icons-outlined md-48">support_agent</i>
+                    </div>
+                    <div class="iitem-icon-bg">
+                        <i class="material-icons material-icons-outlined">support_agent</i>
+                    </div>
+                    <h3 class="iitem-heading item-heading-large">Adecco Office</h3>
+                    <div class="iitem-desc">The Adecco Group elaboró un estudio en 8 mercados para obtener conocimientos sobre actitudes y comportamientos del personal con el objetivo de ayudarte a entender el futuro del trabajo.The Adecco Group elaboró un estudio en 8 mercados para obtener conocimientos sobre actitudes y comportamientos del personal con el objetivo de ayudar a empresas y organizaciones a entender el futuro del trabajo.</div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12 item">
+                <a href="{% url 'Adecco3' %}" class="iitem item-style">
+                    <div class="iitem-icon">
+                        <i class="material-icons material-icons-outlined md-48">cloud_download</i>
+                    </div>
+                    <div class="iitem-icon-bg">
+                        <i class="material-icons material-icons-outlined">cloud_download</i>
+                    </div>
+                    <h3 class="iitem-heading item-heading-large">Adecco Sales & Marketing</h3>
+                    <div class="iitem-desc">Compartimos contigo el informe El Futuro del trabajo post Covid-19, basado en  una encuesta, presentando datos como futuro del empleo, vacunación, salud y más.Ante un mercado laboral extremadamente competido con jóvenes profesionales preparados y una sociedad que cambia rápidamente, las organizaciones apuestan por la adaptailidad como clave para la superviviencia sus negocios.</div>
+                </a>
+            </div>
+            <div class="col-12">
+                <div class="section-btns justify-content-center">
+                    <a href="{% url 'Servicios' %}" class="btn btn-with-icon btn-w240 ripple">
+                        <span>Ver todos los Servicios</span>
+                        <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="{% static 'assets/img/sprite.svg#arrow-right' %}"></use></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End services -->
+
+			<!-- Begin advantages -->
+<section class="section section-bgc">
+    <div class="container">
+        <div class="row items">
+            <div class="col-12">
+                <div class="section-heading heading-center">
+                    <div class="section-subheading"></div>
+                    <h2>¿Porque elegirnos?</h2>
+                </div> 
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <div class="ini">
+                    <div class="ini-count">01</div>
+                    <div class="ini-info">
+                        <h3 class="ini-heading item-heading-large">Definición del futuro</h3>
+                        <div class="ini-desc">
+                            <p>Si te gusta la innovación, puedes ayudarnos a liderar el cambio en lugar de seguir las tendencias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <div class="ini">
+                    <div class="ini-count">02</div>
+                    <div class="ini-info">
+                        <h3 class="ini-heading item-heading-large">Respeto</h3>
+                        <div class="ini-desc">
+                            <p>Nuestro espíritu de equipo impulsa la colaboración para ayudarnos a alcanzar nuestros objetivos colectivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <div class="ini">
+                    <div class="ini-count">03</div>
+                    <div class="ini-info">
+                        <h3 class="ini-heading item-heading-large">Ayuda e impulso</h3>
+                        <div class="ini-desc">
+                            <p>Tu trayectoria individual forma parte de nuestro éxito compartido y te ayudaremos a desatar todo tu potencial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <div class="ini">
+                    <div class="ini-count">04</div>
+                    <div class="ini-info">
+                        <h3 class="ini-heading item-heading-large">Libertad total</h3>
+                        <div class="ini-desc">
+                            <p>Queremos que goces de la autonomía y la confianza que necesitas para tomar las mejores decisiones para nuestros clientes, negocios y personas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <div class="ini">
+                    <div class="ini-count">05</div>
+                    <div class="ini-info">
+                        <h3 class="ini-heading item-heading-large">Crecimiento con éxito <br></h3>
+                        <div class="ini-desc">
+                            <p>Invertimos en tu futuro: aquí puedes ser el dueño de tu carrera y hacerla crecer. No dejamos de aprender durante toda la vida, lo que favorece y acelera el crecimiento personal y profesional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <div class="ini">
+                    <div class="ini-count">06</div>
+                    <div class="ini-info">
+                        <h3 class="ini-heading item-heading-large">Mejor rendimiento</h3>
+                        <div class="ini-desc">
+                            <p>Tenemos el honor de haber sido seleccionados como uno de los mejores lugares del mundo para trabajar del mundo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End advantages -->
+
+			<!-- Begin counter section -->
+<section class="section">
+    <div class="container">
+        <div class="row spincrement-container">
+            <div class="col-xl-5 offset-xl-2 col-lg-6 offset-lg-1 col-12">
+                <div class="main-counter">
+                    <div class="main-counter-item">
+                        <div class="main-counter-item-center">
+                            <div>
+                                <div class="main-counter-numb spincrement" data-from="0" data-to="3">0</div>
+                                <div class="main-counter-heading">Millones <br> de Personas cada año</div>
+                            </div>
+                        </div>
+                        <div class="main-counter-item-circ"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 offset-xl-1 col-lg-3 offset-lg-1 col-12 counter-items items">
+                <div class="counter-item item">
+                    <div class="counter-item-numb"><span class="spincrement" data-from="0" data-to="100.000">0</span></div>
+                    <p class="counter-item-heading">Organizaciones</p>
+                </div>
+                <div class="counter-item item">
+                    <div class="counter-item-numb spincrement" data-from="0" data-to="35.000">0</div>
+                    <p class="counter-item-heading">Empleados</p>
+                </div>
+                <div class="counter-item item">
+                    <div class="counter-item-numb spincrement" data-from="0" data-to="60">0</div>
+                    <p class="counter-item-heading">Países y territorios</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End counter section -->
+
+			<div class="section section-bgc">
+    <div class="container">
+        <div class="row items">
+            <div class="col-12">
+                <div class="section-heading heading-center">
+                    <div class="section-subheading"></div>
+                    <h1>Empleos</h1>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <!-- Begin pricing item -->
+                <div class="pricing-item item-style">
+                    <header class="pricing-item-header">
+                        <div class="pricing-item-heading">Vacante</div>
+                        <div class="pricing-item-price"><small>Jefe de compras</small></div>
+                    </header>
+                    <div class="pricing-item-h">
+                        <div class="pricing-item-content">
+                            <ul class="pricing-item-list">
+                                <li class="active">
+                                    <i class="material-icons md-24">check</i>
+                                    Ubicación:
+                                    Quintana Roo-Benito Juárez
+                                </li>
+                                <li class="active">
+                                    <i class="material-icons md-24">check</i>
+                                    Principales tareas y responsabilidades:
+                                    Supervisión
+                                </li>
+                                <li>
+                                    <i class="material-icons md-24">check</i>
+                                    Experiencia requerida :
+                                    Experiencia mínima de 6 meses en puesto similar
+                                </li>
+                                <li>
+                                    <i class="material-icons md-24">check</i>
+                                    Descripción:
+                                    Manejo de personal
+                                </li>
+                                <li>
+                                    <i class="material-icons md-24">check</i>
+                                    Información Adicional:
+                                    Prestaciones de Ley
+                                </li>
+                            </ul>
+                        </div>
+                        <footer class="pricing-item-footer">
+                            <a href="#!" class="btn btn-large btn-with-icon btn-wide ripple">
+                                <span>Mas Información!!</span>
+                                <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="{% static 'assets/img/sprite.svg#arrow-right' %}"></use></svg>
+                            </a>
+                        </footer>
+                    </div>
+                </div><!-- End pricing item -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <!-- Begin pricing item -->
+                <div class="pricing-item item-style">
+                    <header class="pricing-item-header">
+                        <div class="pricing-item-heading">Vacante</div>
+                        <div class="pricing-item-price"><small>Tecnico de Servicio Sector Minero</small> </div>
+                    </header>
+                    <div class="pricing-item-h">
+                        <div class="pricing-item-content">
+                            <ul class="pricing-item-list">
+                                <li class="active">
+                                    <i class="material-icons md-24">check</i>
+                                    Ubicación:
+                                    Sonora-Hermosillo
+                                </li>
+                                <li class="active">
+                                    <i class="material-icons md-24">check</i>
+                                    Principales tareas y responsabilidades:
+                                    Contacto y seguimiento de reportes de servicio con clientes del sector minero 
+                                   
+                                </li>
+                                <li>
+                                    <i class="material-icons md-24">check</i>
+                                    Experiencia requerida:
+                                    Se solicita Técnico de Servicios para Sector Minero 
+                                  
+                                </li>
+                                <li>
+                                    <i class="material-icons md-24">check</i>
+                                    Descripción:
+                                    Contar con amplia experiencia en atención a clientes, conocimientos de mantenimiento de equipos de bombeo para extracción de solidos
+                                  
+                                </li>
+                                <li>
+                                    <i class="material-icons md-24">check</i>
+                                    Información Adicional:
+                                    Salario a negociar
+                                </li>
+                            </ul>
+                        </div>
+                        <footer class="pricing-item-footer">
+                            <a href="#!" class="btn btn-large btn-with-icon btn-wide ripple">
+                                <span>Mas Información!!</span>
+                                <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="{% static 'assets/img/sprite.svg#arrow-right' %}"></use></svg>
+                            </a>
+                        </footer>
+                    </div>
+                </div><!-- End pricing item -->
+            </div>
+         
+            <div class="col-lg-4 col-md-12 col-12 item">
+                <!-- Begin pricing item -->
+                <div class="pricing-item item-style">
+                    <header class="pricing-item-header">
+                        <div class="pricing-item-heading">Vacante</div>
+                        <div class="pricing-item-price"><small>Sales Engineer</small></div>
+                    </header>
+                    <div class="pricing-item-h">
+                        <div class="pricing-item-content">
+                            <ul class="pricing-item-list">
+                                <li class="active">
+                                    <i class="material-icons md-24">check</i>
+                                    Ubicación:
+                                    Chihuahua-Ciudad Juarez.
+                                </li>
+                                <li class="active">
+                                    <i class="material-icons md-24">check</i>
+                                    Principales tareas y responsabilidades:
+                                    Ingeniero en Automatización, Electrónica ó Mecatrónica.
+                                    Inglés Avanzado.
+                                </li>
+                                <li class="active">
+                                    <i class="material-icons md-24">check</i>
+                                    Experiencia requerida:
+                                    3 años de experiencia en Ventas en procesos de Automatización de Sensores Industriales.
+                                </li>
+                                <li class="active">
+                                    <i class="material-icons md-24">check</i>
+                                    Descripción:
+                                    Venta de procesos automatizados de sensores industriales
+                             
+                            </ul>
+                        </div>
+                        <footer class="pricing-item-footer">
+                            <a href="#!" class="btn btn-large btn-with-icon btn-wide ripple">
+                                <span>Mas Información!!</span>
+                                <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="{% static 'assets/img/sprite.svg#arrow-right' %}"></use></svg>
+                            </a>
+                        </footer>
+                    </div>
+                </div><!-- End pricing item -->
+            </div>
+        </div>
+    </div>
+</div>
+
+			<!-- Begin reviews -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading heading-center">
+                    <div class="section-subheading"></div>
+                    <h2>Nuestros Contribuyentes</h2>
+                </div> 
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <!-- Begin reviews item -->
+                <div class="reviews-item item-style">
+                    <div class="reviews-item-header">
+                        <div class="reviews-item-img">
+                            <img data-src="{% static 'assets/img/pepe.jpg' %}" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                        </div>
+                        <div class="reviews-item-info">
+                            <h4 class="reviews-item-name item-heading">
+                                Philippe Foriel-Destezet</h4>
+                            <div class="reviews-item-position">FUNDADOR</div>
+                        </div>
+                    </div>
+                    <div class="reviews-item-text">
+                        <p>Adecco celebró ayer junta general de accionistas y, además del nombramiento de los nuevos presidentes, se decidió renovar el consejo de administración.</p>
+                    </div>
+                </div><!-- End reviews item -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+                <!-- Begin reviews item -->
+                <div class="reviews-item item-style">
+                    <div class="reviews-item-header">
+                        <div class="reviews-item-img">
+                            <img data-src="{% static 'assets/img/img.png' %}" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                        </div>
+                        <div class="reviews-item-info">
+                            <h4 class="reviews-item-name item-heading">Valerie Beaulieu</h4>
+                            <div class="reviews-item-position">DIRECTOR DE MARKETING</div>
+                        </div>
+                    </div>
+                    <div class="reviews-item-text">
+                        <p>Permitiendo una empleabilidad sostenible y de por vida para las personas y capacitando a las organizaciones para optimizar sus fuerzas de trabajo, en un mundo de trabajo donde todos pueden superar su potencial.</p>
+                    </div>
+                </div><!-- End reviews item -->
+            </div>
+            <div class="col-lg-4 col-md-12 col-12 item">
+                <!-- Begin reviews item -->
+                <div class="reviews-item item-style">
+                    <div class="reviews-item-header">
+                        <div class="reviews-item-img">
+                            <img data-src="{% static 'assets/img/alain.jpg' %}" class="lazy" src="'data: image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                        </div>
+                        <div class="reviews-item-info">
+                            <h4 class="reviews-item-name item-heading">Alain Dehaze</h4>
+                            <div class="reviews-item-position">DIRECTOR EJECUTIVO</div>
+                        </div>
+                    </div>
+                    <div class="reviews-item-text">
+                        <p>Apostamos por un mercado laboral en el que cualquier persona pueda participar en igualdad de condiciones y oportunidades, independientemente de factores diferentes a las competencias,habilidades, valores y actitudes personales y profesionales, en definitiva del talento de las personas.</p>
+                    </div>
+                </div><!-- End reviews item -->
+            </div>
+        </div>
+    </div>
+</section><!-- End reviews -->
+
+		
+
+		<a class="bff d-none d-md-block" href="{% url 'Contactanos' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="bff-container">
+                    <p>!!Te estamos esperando!! </p>
+                    <div class="btn btn-border btn-small">
+                        <span>Contactanos!!</span>
+                        <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="{% url 'Contactanos' %}"></use></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+{% endblock %}
+

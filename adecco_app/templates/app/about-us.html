@@ -1,0 +1,90 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block contenido %}
+
+			<!-- Begin bread crumbs -->
+			<nav class="bread-crumbs">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<ul class="bread-crumbs-list">
+								<li>
+									<a href="{% url 'Inicio' %}">Inicio</a>
+									<i class="material-icons md-18">chevron_right</i>
+								</li>
+								<li><a href="#!">Sobre Nosotros</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav><!-- End bread crumbs -->
+
+			<div class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-heading heading-center">
+								<div class="section-subheading">Mas Informacion</div>
+								<h1>Sobre Nosotros</h1>
+							</div>
+							<div class="content">
+								<div class="img-style">
+									<img src="assets/img/about-img.jpg" alt="">
+								</div>
+								<h2>Nuestro grupo</h2>
+								<p>
+                                    
+                                    El mercado del trabajo es complejo y cambia continuamente. Nuestro objetivo a largo plazo es crear el trabajo del futuro para todos. Hacemos posible la empleabilidad sostenible de las personas y ayudamos a las organizaciones a optimizar sus plantillas.</p>
+								
+								<p>
+                                    Con nuestras soluciones innovadoras influimos positivamente en la vida de millones de personas. 
+                                    Una historia que nos encanta contar.
+
+                                    El Grupo Adecco es la empresa matriz de un gran número de marcas a nivel internacional, incluyendo Adecco, Modis, Spring Professional, Badenoch & Clark, Pontoon, General Assembly, Vettery, YOSS, Adia y Lee Hecht Harrison.
+                                </p>
+                                <p>
+                                    El Grupo Adecco ofrece una amplia variedad de servicios que incluyen personal temporal, colocación permanente, transición profesional, re-capacitación y desarrollo de talento, así como externalización y consultoría.Los mercados clave del Grupo Adecco son Francia, Norteamérica,
+                                Reino Unido e Irlanda, Japón, Alemania, Austria, Italia, Benelux, Países Nórdicos, Iberia, Australia, Nueva Zelanda, Suiza.
+                                </p>
+                                <p>
+                                    1996: Las compañías de recursos humanos Ecco (Francia) y Adia Interim (Suiza) se fusionaron para dar lugar a una compañía global con unos ingresos anuales de 5.400 millones de euros. La combinación de sus operaciones dio como resultado una red de 2.500 ramificaciones.
+                                </p>
+                                <p> 
+                                    1999: Se crea la Fundación Adecco, en España, para ayudar a las personas que tienen más difícil el acceso al mercado laboral.
+                                </p>
+                                <p>
+                                    2000: El grupo Adecco adquiere Olsten Staffing, convirtiéndose en la primera compañía de recursos humanos de Estados Unidos. La fusión dio lugar a unos ingresos combinados de 17.000 millones de euros.
+                                </p>
+                                <p>
+                                    2006: El grupo Adecco adquiere la empresa alemana DIS AG.
+                                </p>
+                                <p>
+                                    2009: El grupo Adecco adquiere Spring Group.
+                                </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		
+
+		<a class="bff d-none d-md-block" href="{% url 'Contactanos' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="bff-container">
+                    <p>!!Te estamos Esperando!!</p>
+                    <div class="btn btn-border btn-small">
+                        <span>Contactenos!!</span>
+                        <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+{% endblock %}
+
+
