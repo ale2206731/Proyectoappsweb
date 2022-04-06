@@ -23,7 +23,7 @@ urlpatterns = [
     path('AdeccoHealthcare/', Adecco6, name='Adecco6'),
     path('buscar/', Busqueda, name='buscar'),
     path('registro/', Registro.as_view(),name='registro'),
-    path('login/', CustomLoginView.as_view(redirect_authenticated_user=True, template_name='app/login.html', authetication_form=loginForm), name='login'),
+    path('login/', CustomLoginView.as_view(redirect_authenticated_user=True, template_name='app/login.html', authentication_form=loginForm), name='login'),
     path('logout/', auth_views.LoginView.as_view(template_name='app/logout.html'), name='logout'),
 
 ]
