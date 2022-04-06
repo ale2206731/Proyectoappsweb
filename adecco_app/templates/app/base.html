@@ -155,7 +155,7 @@
         {% if user.is_authenticated %}
         <li><a href="{% url 'logout' %}" data-title="logout"><span>Logout</span></a></li>
         {% else %}
-        <li><a href="{% url 'login' %}" data-title="logIn"><span>Login</span></a></li>
+        <li><a href="{% url 'login' %}" data-title="login"><span>Login</span></a></li>
         {% endif %}
         <li><a href="{% url 'Noticias' %}" data-title="News"><span>Noticias</span></a></li>
         <li><a href="{% url 'Contactanos' %}" data-title="Contact Us"><span>Contactos</span></a></li>

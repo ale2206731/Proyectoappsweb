@@ -94,7 +94,7 @@ class Registro(View):
         
         if request.user.is_authenticated:
             return redirect(to='/')
-        return super(Registro,self).dispatch(self, request, *args, **kwargs)
+        return super(Registro,self).dispatch(request, *args, **kwargs)
 
 class CustomLoginView(LoginView):
     form_class = loginForm
