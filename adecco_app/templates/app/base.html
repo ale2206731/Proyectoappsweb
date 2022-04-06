@@ -40,13 +40,20 @@
 <nav class="mmm">
     <div class="mmm-content">
         <ul class="mmm-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="typography.html">Typography</a></li>
-            <li><a href="tabs-and-accordions.html">Tabs & Accordions</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="{% url 'Inicio' %}" data-title="Home"><span>Inicio</span></a></li>
+            <li><a href="{% url 'Sobre Nosotros' %}" data-title="About us"><span>Sobre Nosotros</span></a></li>
+            <li><a href="{% url 'Servicios' %}" data-title="Services"><span>Servicios</span></a></li>
+           
+           
+            <li><a href="{% url 'registro' %}" data-title="register"><span>Registro</span></a></li>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'logout' %}" data-title="logout"><span>Logout</span></a></li>
+            {% else %}
+            <li><a href="{% url 'login' %}" data-title="logIn"><span>Login</span></a></li>
+            {% endif %}
+            <li><a href="{% url 'Noticias' %}" data-title="News"><span>Noticias</span></a></li>
+            <li><a href="{% url 'Contactanos' %}" data-title="Contact Us"><span>Contactos</span></a></li>
+           
         </ul>
     </div>
     <div class="mmm-footer">
