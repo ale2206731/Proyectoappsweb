@@ -1,0 +1,115 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block contenido %}
+
+			<!-- Begin bread crumbs -->
+			<nav class="bread-crumbs">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<ul class="bread-crumbs-list">
+								<li>
+									<a href="{% url 'Inicio' %}">Inicio</a>
+									<i class="material-icons md-18">chevron_right</i>
+								</li>
+								<li><a href="#!">Registro</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav><!-- End bread crumbs -->
+
+			<div class="section">
+				<div class="container">
+					<div class="row content-items">
+						<div class="col-xl-8 col-md-7 content-item">
+                            <div class="col-12"><h3>Regristro Usuario</h3></div>
+							<form action="#" method="post" class="contact-form contact-form-padding">
+                                {% csrf_token %}
+                                {% if form.errors %}
+                                  <div class="alert alert-danger alert-dismissible" role="alert">
+                                      <div id="form_errors">
+                                          {% for key, value in form.errors.items %}
+                                           <strong>{{ value }}</strong>
+                                           {% endfor %}
+                                      </div>
+                                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"> 
+                                          <span aria-hidden="true">&times:</span>
+                                      </button>
+                                  </div>
+                                {% endif %}
+								<input type="hidden" name="form_subject" value="Contact form">
+								<!-- End hidden Field for send form -->
+								<div class="row gutters-default">
+									<div class="col-xl-4 col-sm-6 col-12">
+										<div class="form-field">
+											<label for="name" class="form-field-label">Nombre<span>*</span></label>
+											<input type="text" class="form-field-input" name="{{ form.first_name.name }}" value="" autocomplete="off" required="required">
+										</div>
+									</div>
+									<div class="col-xl-4 col-sm-6 col-12">
+										<div class="form-field">
+											<label for="last_name" class="form-field-label">Last Name<span>*</span></label>
+											<input type="text" class="form-field-input mask-phone" name="{{ form.last_name.name }}" value="" autocomplete="off" required="required" id="last_name">
+										</div>
+									</div>
+									<div class="col-xl-4 col-12">
+										<div class="form-field">
+											<label for="username" class="form-field-label">Username<span>*</span></label>
+											<input type="text" class="form-field-input" name="{{ form.username.name }}" value="" autocomplete="off" required="required" id="username">
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-field">
+											<label for="email" class="form-field-label">Email</label>
+											<input type="email"  class="form-field-input" name="{{ form.email.name }}}" value="" autocomplete="off" required="required" id="email" >
+										</div>
+									</div>
+                                    <div class="col-12">
+										<div class="form-field">
+											<label for="password" class="form-field-label">Password</label>
+											<input type="password"  class="form-field-input" name="{{ form.password1.name }}}" value="" autocomplete="off" required="required" id="password">
+										</div>
+									</div>
+                                    <div class="col-12">
+										<div class="form-field">
+											<label for="password2" class="form-field-label">Repeat Password</label>
+											<input type="password"  class="form-field-input" name="{{ form.password2.name }}}" value="" autocomplete="off" required="required" id="password2">
+										</div>
+									</div>
+									<div class="form-btn">
+                                        &nbsp;
+											<input name="submit" type="submit" value="Registrar User" class="btn btn-w240 ripple">
+                                        &nbsp; 
+                                            <input name="reset" type="reset" value="Reset Form" class="btn btn-w240 ripple">
+									</div>
+                                    <div class="block center">
+                                        <p>¿Ya tienes una cuenta? Ingresa <a href="{% url 'login' %}">Aqui</a></p>
+                                    </div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<a class="bff d-none d-md-block" href="#">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="bff-container">
+                    <p></p>
+                    <div class="btn btn-border btn-small">
+                        <span></span>
+                        <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+{% endblock %}
