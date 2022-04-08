@@ -1,4 +1,3 @@
-from unicodedata import name
 from django.urls import path
 from .views import about, index, about, services, tabsaccordions, news, contact, newspost, Adecco1, Terminos,Privacidad, Adecco2, Adecco3, Adecco4, Adecco5, Adecco6, Busqueda, Registro, CustomLoginView
 from django.conf.urls.static import static
@@ -27,3 +26,5 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='app/logout.html'), name='logout'),
 
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

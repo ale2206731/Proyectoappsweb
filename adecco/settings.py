@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'adecco_app',
     'crispy_forms', 
-    'django.contrib.humanize',
 ]
 
 CRISPY_TEMPLATE_PACK ='bootstrap4'
@@ -129,7 +128,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 django_heroku.settings(locals())
 
-SESSION_COOKIE_AGE = 60 * 60 * 24 *30
+SESSION_COOKIE_AGE = 60 * 60 * 24 *5
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = 'login'
 

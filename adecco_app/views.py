@@ -1,7 +1,3 @@
-from ast import If
-import imp
-#from typing_extensions import Self
-from urllib import request
 from django.shortcuts import render, redirect
 from .models import  Comentario, Noticias
 from .forms import ComentarioForm, userForm, loginForm
@@ -90,11 +86,12 @@ class Registro(View):
             messages.success(request, f'Account created for {username}')
             return redirect(to='/')
         return render(request, self.template_name, {'form': form})
+
     def dispatch(self, request, *args, **kwargs):
-        
         if request.user.is_authenticated:
             return redirect(to='/')
-        return super(Registro,self).dispatch(request, *args, **kwargs)
+        return super (Registro, self).dispatch(request, *args, **kwargs)
+
 
 class CustomLoginView(LoginView):
     form_class = loginForm
