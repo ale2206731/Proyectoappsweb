@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Comentario, Noticias
+from .models import Comentarios, Noticias
 
 # Register your models here.
 class NotiAdmin(admin.ModelAdmin):
@@ -10,11 +10,6 @@ class NotiAdmin(admin.ModelAdmin):
     list_per_page = 10
 
 
-class ComentarioAdmin(admin.ModelAdmin):
-    list_display = ["nombre", "email", "telefono", "comentario"]
-    list_editable = ["comentario"]
-    search_fields = ["email"]
-    list_per_page = 10
 
 
 
@@ -22,5 +17,5 @@ class ComentarioAdmin(admin.ModelAdmin):
 
     # Register your models here.
 admin.site.register(Noticias,NotiAdmin)
-admin.site.register(Comentario, ComentarioAdmin)
+admin.site.register(Comentarios)
    

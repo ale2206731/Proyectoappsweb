@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import  Comentario, Noticias
-from .forms import ComentarioForm, userForm, loginForm
+from .models import  Comentarios, Comentarios, Noticias
+from .forms import ComentariosForm, userForm, loginForm
 from django.contrib import messages
 from django.views import View
 from django.contrib.auth.views import LoginView
@@ -30,15 +30,16 @@ def news(request):
 
 def contact(request):
     datos = { 
-        'comentarios' : Comentario,
-        'form': ComentarioForm
+         "form": ComentariosForm,
+        "comments": Comentarios
+       
     }
     if request.method == 'POST':
-        formulario = ComentarioForm(data=request.POST)
+        formulario = ComentariosForm(data=request.POST)
         if formulario.is_valid():
             formulario.save()
         else:
-            datos['form'] = formulario
+            datos["form"] = formulario
     return render(request, 'app/contact-us.html', datos)
 
 def newspost(request):

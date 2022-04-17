@@ -1,5 +1,3 @@
-from distutils.command.upload import upload
-from tabnanny import verbose
 from django.db import models
 import datetime
 
@@ -14,7 +12,7 @@ class Noticias (models.Model):
     def __str__(self):
         return self.encabezado
 
-class Comentario(models.Model):
+class Comentarios(models.Model):
     nombre=models.CharField(max_length=150, blank=False, null=False)
     email=models.EmailField(max_length=150, blank=False, null=False)
     telefono= models.CharField(max_length=150, blank=False, null=False)

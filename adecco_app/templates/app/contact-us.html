@@ -61,18 +61,18 @@
 							</div>
 						</div>
 						<div class="col-xl-8 col-md-7 content-item">
-							<form action="#!" method="post" class="contact-form contact-form-padding">
+							<form action="" method="POST" class="contact-form contact-form-padding">
 								<!-- Begin hidden Field for send form -->
-								<input type="hidden" name="form_subject" value="Contact form">
+								<!-- <input type="text" name="form_subject" value="Contact form"> -->
 								<!-- End hidden Field for send form -->
 								
 
 
 									{% csrf_token %}
-									{{ form | crispy }}
+									{{ form }}
 									<div class="col-12">
 										<div class="form-btn">
-											<button type="submit" class="btn btn-w240 ripple"><span>Enviar Mensaje!!</span></button>
+											<input type="submit" class="btn btn-w240 ripple" value="Enviar">
 										</div>
 									</div>
 								</div>
