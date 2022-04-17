@@ -15,7 +15,6 @@ class Noticias (models.Model):
 class Comentarios(models.Model):
     nombre=models.CharField(max_length=150, blank=False, null=False)
     email=models.EmailField(max_length=150, blank=False, null=False)
-    telefono= models.CharField(max_length=150, blank=False, null=False)
     comentario = models.TextField(blank=False, null=False)
 
     class Meta:
