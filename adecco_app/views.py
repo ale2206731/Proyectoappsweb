@@ -37,7 +37,7 @@ def contact(request):
     if request.method == 'POST':
         formulario = ComentariosForm(data=request.POST)
         if formulario.is_valid():
-                formulario.save()
+            formulario.save()
         else:
             datos["form"] = formulario
     return render(request, 'app/contact-us.html', datos)
