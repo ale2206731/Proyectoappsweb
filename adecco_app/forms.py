@@ -6,7 +6,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 class ComentariosForm(forms.ModelForm):
    class Meta:
         model = Comentarios
-        fields = ("nombre", "email", "comentario")
+        fields = ("nombre", "email", "telefono", "comentario")
       #fields = '__all__' 
     
 
