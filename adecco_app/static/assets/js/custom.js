@@ -479,9 +479,6 @@
 					ContactName: {
 					required: "The name field is required.",
 					},
-					ContactPhone: {
-					required: "The phone field is required.",
-					},
 					ContactEmail: {
 						required: "The email field is required.",
 						email: "The email field is required.",
