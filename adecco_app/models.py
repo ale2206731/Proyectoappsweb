@@ -5,7 +5,7 @@ import datetime
 class Noticias (models.Model):
     encabezado = models.CharField(max_length=100, blank=False,null=False)
     descripcion = models.TextField(blank=False, null=False)
-    
+    imagen = models.ImageField(null=True, upload_to='productos')
     autor = models.CharField(max_length=100,blank=False, null=False)
     fecha = models.DateField(default=datetime.date.today, blank=False,null=False)
 

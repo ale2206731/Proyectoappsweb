@@ -1,5 +1,6 @@
+from string import digits
 from django.urls import path
-from .views import about, index, about, services, tabsaccordions, news, contact, newspost, Adecco1, Terminos,Privacidad, Adecco2, Adecco3, Adecco4, Adecco5, Adecco6, Busqueda, Registro, CustomLoginView
+from .views import about, acordeones, index, about, services, acordeones, news, contact, newspost, Adecco1, Terminos,Privacidad, Adecco2, Adecco3, Adecco4, Adecco5, Adecco6, Busqueda, Registro, CustomLoginView
 from django.conf.urls.static import static
 from django.conf import settings
 from .forms import loginForm
@@ -8,7 +9,7 @@ urlpatterns = [
     path('', index, name='Inicio'),
     path('about/', about, name='Sobre Nosotros'),
     path('services/', services, name='Servicios'),
-    path('tabsaccordions/', tabsaccordions, name='Pestañas y Acordes'),
+    path('acordeones/', acordeones, name='Comentarios'),
     path('news/', news, name='Noticias'),
     path('contact-us/', contact, name='Contactanos'),
     path('news-post/', newspost, name='Noticias Publicadas'),

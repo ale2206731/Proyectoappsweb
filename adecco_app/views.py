@@ -1,3 +1,4 @@
+from http.client import HTTPResponse
 from django.shortcuts import render, redirect
 from .models import  Comentarios, Comentarios, Noticias
 from .forms import ComentariosForm, userForm, loginForm
@@ -9,14 +10,15 @@ from django.contrib.auth.views import LoginView
 def index(request):
     return render(request, 'app/index.html')
 
+
 def about(request):
     return render(request, 'app/about-us.html')
 
 def services(request):
     return render(request, 'app/services.html')
 
-def tabsaccordions(request):
-    return render(request, 'app/tabs-and-accordions.html')
+def acordeones(request):
+    return render(request, 'app/acordeones.html')
 
 def news(request):
     noticia = Noticias.objects.all()

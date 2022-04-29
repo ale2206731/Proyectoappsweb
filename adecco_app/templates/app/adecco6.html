@@ -1,5 +1,8 @@
 {% extends "app/base.html" %}
 {% load static %}
+{% block titulo %}
+Healthcare
+{% endblock %}
 
 {% block contenido %}
 
@@ -35,23 +38,30 @@
 								<div class="img-style">
 									<img src="assets/img/subheader-corporate.png" alt="">
 								</div>
-								<p>Externalización de soluciones y procesos de negocio para optimizar la productividad de las empresas.
-									Con nuestros servicios especializados de logística y almacén gestionamos la planeación, administración, supervisión y ejecución de 
-									procesos dentro de la cadena de suministro y de logística inversa, para una mayor eficacia y eficiencia.</p>
-								<p>Áreas en las cuáles se puede aplicar este modelo de servicio</p>
-								<img src="{% static 'assets/img/almacen.jpg' %}" align="right">
-								<h5>Logística y almacén</h5>
+								<p>A través de acciones dirigidas a la promoción y protección de la salud, 
+									y la prevención de accidentes de trabajo y riesgos profesionales.</p>
+								<img src="{% static 'assets/img/med.jpg' %}" align="right">
+								<h5>Servicios que ofrecemos:</h5>
 
 							
 								
 								<ul>
-									<li>Procesos crítico dentro de la cadena de suministro</li>               
-									<li>Procesos estables / variables</li>
-									<li>Procesos continuos / discontinuos</li>                                   																			
-									<li>Adaptable a la demanda productiva</li>
-									<li>Procesos repetitivos, estandarizados y controlables</li>	
-									<li>En su mayoría se realizarán en las instalaciones del cliente</li>	
-									<li>Procesos crítico dentro de la cadena de suministro</li>   
+									<h3>Medicina del Trabajo.</h3>  
+									<p>Especialidad médica encargada de la prevención 
+										y asistencia de la <br> salud de las personas dentro del ámbito laboral.</p> 
+										<img src="{% static 'assets/img/medicina.jpg' %}" align="right">            
+									<h3>Servicio de Medicina.</h3>
+									<p>El objeto de este servicio es la conservación de la salud del <br>trabajador, 
+										prevención y atención de accidentes de trabajo, de <br>enfermedades profesionales y rehabilitación.</p>
+										
+									<h3>Servicio de Fisioterapia.</h3> 
+									
+									<p>La terapia física es una profesión del área de la salud que estudia <br>el 
+										movimiento corporal humano, el cual está involucrado en <br>toda actividad humana, incluyendo el trabajo.</p>                                  																			
+									<h3>Servicio de Medicina Preventiva.</h3>
+									<p>Es un enfoque proactivo para el cuidado del paciente y que se 
+										<br>detecte temprano para que el paciente tenga la mejor<br> posibilidad de recuperación y obtener una salud óptima.</p>
+									   
 								</ul>
 									    
 								
@@ -61,137 +71,7 @@
 				</div>
 			</div>
 
-			<!-- Begin Pricing -->
-			<section class="section section-bgc">
-				<div class="container">
-					<div class="row items">
-						<div class="col-12">
-							<div class="section-heading heading-center">
-								<div class="section-subheading"></div>
-								<h2>AREAS</h2>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 item">
-							<!-- Begin pricing item -->
-							<div class="pricing-item item-style">
-								<header class="pricing-item-header">
-									<div class="pricing-item-heading">Area</div>
-									<div class="pricing-item-price"><small>Maquila Industrial Especializada</small></div>
-								</header>
-								<div class="pricing-item-h">
-									<div class="pricing-item-content">
-										<ul class="pricing-item-list">
-											<li class="active">
-												<i class="material-icons md-24">check</i>
-												Procesos catalogados como continuos (en serie).
-											</li>
-											<li class="active">
-												<i class="material-icons md-24">check</i>
-												Adaptables a las demandas productivas y de los mercados.
-											</li>
-											<li>
-												<i class="material-icons md-24">check</i>
-												Procesos repetitivos y estandarizados.
-											</li>
-											<li>
-												<i class="material-icons md-24">check</i>
-												Procesos estables.
-											</li>
-											<li>
-												<i class="material-icons md-24">check</i>
-												Procesos con un grado de especialización técnica.
-											</li>
-										</ul>
-									</div>
-									<footer class="pricing-item-footer">
-										<a href="#!" class="btn btn-large btn-with-icon btn-wide ripple">
-											<span>Mas Informacion!!</span>
-											<svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
-										</a>
-									</footer>
-								</div>
-							</div><!-- End pricing item -->
-						</div>
-					
-						<div class="col-lg-4 col-md-12 col-12 item">
-							<!-- Begin pricing item -->
-							<div class="pricing-item item-style">
-								<header class="pricing-item-header">
-									<div class="pricing-item-heading">AREA</div>
-									<div class="pricing-item-price"><small>Agrícola</small> </div>
-								</header>
-								<div class="pricing-item-h">
-									<div class="pricing-item-content">
-										<ul class="pricing-item-list">
-											<li class="active">
-												<i class="material-icons md-24">check</i>
-												Siembra
-											</li>
-											<li class="active">
-												<i class="material-icons md-24">check</i>
-												Desespigue
-											</li>
-											<li class="active">
-												<i class="material-icons md-24">check</i>
-												Separación de cintilla
-											</li>
-											<li class="active">
-												<i class="material-icons md-24">check</i>
-												Desmezcle
-											</li>
-											<li class="active">
-												<i class="material-icons md-24">check</i>
-												Desmezcle
-											</li>
-										</ul>
-									</div>
-									<footer class="pricing-item-footer">
-										<a href="#!" class="btn btn-large btn-with-icon btn-wide ripple">
-											<span>Mas Informacion!!</span>
-											<svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
-										</a>
-									</footer>
-								</div>
-							</div><!-- End pricing item -->
-						</div>
-						<div class="col-lg-4 col-md-12 col-12 item">
-							<!-- Begin pricing item -->
-							<div class="pricing-item item-style">
-								<header class="pricing-item-header">
-									<div class="pricing-item-heading">AREA</div>
-									<div class="pricing-item-price"><small>Entrega y recolección</small></div>
-								</header>
-								<div class="pricing-item-h">
-									<div class="pricing-item-content">
-										<ul class="pricing-item-list">
-											<li class="active">
-												<i class="material-icons md-24">check</i>
-												Planeación de rutas
-											</li>
-											<li class="active">
-												<i class="material-icons md-24">check</i>
-												Entregas
-											</li>
-											<li class="active">
-												<i class="material-icons md-24">check</i>
-												Recolecciones
-											</li>
-										
-										</ul>
-									</div>
-									<footer class="pricing-item-footer">
-										<a href="#!" class="btn btn-large btn-with-icon btn-wide ripple">
-											<span>Mas Informacion!!</span>
-											<svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
-										</a>
-									</footer>
-								</div>
-							</div><!-- End pricing item -->
-						</div>
-					</div>
-				</div>
-			</section><!-- End Pricing -->
-
+			
 			
 
 			

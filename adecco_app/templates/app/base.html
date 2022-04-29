@@ -5,13 +5,13 @@
 
     <meta charset="utf-8">
 
-    <title>{% block titulo %} {% endblock %}</title>
+    <title>Adecco{% block titulo %} {% endblock %}</title>
 
     <meta name="description" content="Description">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
         
-    <link rel="icon" href="{% static 'assets/img/favicon/favicon.ico' %}" type="image/x-icon"> 
+    <link rel="icon" href="{% static 'assets/img/Iconadecco.ico' %}" type="image/x-icon"> 
 
     <link rel="stylesheet" href="{% static 'assets/css/libs.css' %}">
 <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
@@ -43,6 +43,7 @@
             <li><a href="{% url 'Inicio' %}" data-title="Home"><span>Inicio</span></a></li>
             <li><a href="{% url 'Sobre Nosotros' %}" data-title="About us"><span>Sobre Nosotros</span></a></li>
             <li><a href="{% url 'Servicios' %}" data-title="Services"><span>Servicios</span></a></li>
+            <li><a href="/digits/" data-title="Digits"><span>Digits</span></a></li>
            
            
             <li><a href="{% url 'registro' %}" data-title="register"><span>Registro</span></a></li>
@@ -98,26 +99,23 @@
                     <div class="header-top-links">
                         <!-- Begin social links -->
                         <ul class="social-links">
+                            
                             <li>
-                                <a href="#!" title="Facebook">
-                                    <svg viewBox="0 0 320 512"><use xlink:href="{% static 'assets/img/facebook' %}"></use></svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!" title="Instagram">
+                                <a href="https://www.instagram.com/" title="Instagram">
                                     <svg viewBox="0 0 448 512"><use xlink:href="{% static 'assets/img/sprite.svg#instagram-icon' %}"></use></svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" title="LinkedIn">
-                                    <svg viewBox="0 0 448 512"><use xlink:href="{% static 'assets/img/sprite.svg#linkedin-icon' %}"></use></svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!" title="Twitter">
+                                <a href="https://twitter.com/" title="Twitter">
                                     <svg viewBox="0 0 512 512"><use xlink:href="{% static 'assets/img/sprite.svg#twitter-icon' %}"></use></svg>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://mx.linkedin.com/" title="LinkedIn">
+                                    <svg viewBox="0 0 448 512"><use xlink:href="{% static 'assets/img/sprite.svg#linkedin-icon' %}"></use></svg>
+                                </a>
+                            </li>
+                            
                         </ul><!-- End social links -->
                     </div>
                 </div>
@@ -149,9 +147,10 @@
         <li><a href="{% url 'Inicio' %}" data-title="Home"><span>Inicio</span></a></li>
         <li><a href="{% url 'Sobre Nosotros' %}" data-title="About us"><span>Sobre Nosotros</span></a></li>
         <li><a href="{% url 'Servicios' %}" data-title="Services"><span>Servicios</span></a></li>
+        <li><a href="/digits/" data-title="Digits"><span>Digits</span></a></li>
         <li><a href="{% url 'Noticias' %}" data-title="News"><span>Noticias</span></a></li>
+        <li><a href="{% url 'Comentarios' %}" data-title="Comentarios"><span>Comentarios</span></a></li>
         <li><a href="{% url 'Contactanos' %}" data-title="Contact Us"><span>Contactos</span></a></li>
-       <!-- <li><a href="/admin/"> Admin </a></li>-->
        <li><a href="{% url 'registro' %}" data-title="register"><span>Registro</span></a></li>
        {% if user.is_authenticated %}
        <li><a href="{% url 'logout' %}" data-title="logout"><span>Logout</span></a></li>
@@ -175,25 +174,21 @@
                                     <li>
                                         <a href="mailto:mail@example.com">
                                             <i class="material-icons md-20">mail_outline</i>
-                                            <span>mail@example.com</span>
+                                            <span>ac689474@gmail.com</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="mailto:mail@example.com" class="formingHrefTel">
                                             <i class="material-icons md-20">support_agent</i>
-                                            <span>1-888-777-1234</span>
+                                            <span>447-115-77-01</span>
                                         </a>
                                     </li>
                                     <li>
                                         <!-- Begin social links -->
                                         <ul class="social-links">
+                                            
                                             <li>
-                                                <a href="#!" title="Facebook">
-                                                    <svg viewBox="0 0 320 512"><use xlink:href="{% static 'assets/img/facebook' %}"></use></svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#!" title="Instagram">
+                                                <a href="https://www.instagram.com/" title="Instagram">
                                                     <svg viewBox="0 0 448 512"><use xlink:href="{% static 'assets/img/sprite.svg#instagram-icon' %}"></use></svg>
                                                 </a>
                                             </li>
@@ -286,7 +281,7 @@
                             <ul class="footer-mnu">
                                 <li><a href="{% url 'Sobre Nosotros' %}" class="hover-link" data-title="About Us"><span>Sobre Nosotros</span></a></li>
                                 <li><a href="{% url 'Servicios' %}" class="hover-link" data-title="Services"><span>Servicios</span></a></li>
-                               
+                                <li><a href="/digits/" data-title="Digits"><span>Digits</span></a></li>
                                 <li><a href="{% url 'Noticias' %}" class="hover-link" data-title="News"><span>Noticias</span></a></li>
                                 <li><a href="{% url 'Contactanos' %}" class="hover-link" data-title="Contact Us"><span>Contactos</span></a></li>
                             </ul>
